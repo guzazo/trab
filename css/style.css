@@ -1,0 +1,369 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap');
+
+/* ── GERAL ── */
+body {
+    background-color: #060126;
+    color: #cbc9c9;
+    font-family: 'JetBrains Mono', monospace;
+    padding-top: 80px;
+}
+
+/* ── TÍTULOS ── */
+h1 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 4.5rem;
+    font-weight: 800;
+    color: #dddbdb;
+    margin: 0;
+    letter-spacing: -2px;
+}
+
+h2 {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.8rem;
+    color: #c8c6c6;
+    text-align: left;
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #321ee1;
+    text-transform: uppercase;
+    font-size: 1rem;
+    margin-bottom: 10px;
+    border-bottom: 1px solid #222;
+}
+
+p {
+    font-family: 'JetBrains Mono', monospace;
+    font-weight: lighter;
+    max-width: 600px;
+    color: #cbc9c9;
+    line-height: 1.6;
+    font-size: 1rem;
+    margin-bottom: 30px;
+}
+
+/* ── HEADER ── */
+header {
+    width: 100%;
+    height: 80px;
+    padding: 0 10%;
+    background-color: #0a0a0a;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+    box-sizing: border-box;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-family: 'JetBrains Mono', monospace;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #888;
+    font-size: 0.9rem;
+}
+
+header nav ul li a:hover {
+    color: #321ee1;
+    border-bottom: 2px solid #321ee1;
+}
+
+header nav ul li a.active {
+    color: #321ee1;
+    border-bottom: 2px solid #321ee1;
+}
+
+/* ── HERO ── */
+.hero {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 85vh;
+    padding: 100px 10% 50px 10%;
+    gap: 50px;
+}
+
+.conteudo {
+    max-width: 600px;
+}
+
+/* ── DESCRIÇÃO ── */
+.descrição {
+    color: #daece1;
+    font-family: 'JetBrains Mono', monospace;
+    font-size: 1.5rem;
+    border-right: 3px solid #321ee1;
+    padding-right: 10px;
+}
+
+/* ── TERMINAL ── */
+.terminal-window {
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 8px;
+    padding: 20px;
+    max-width: 500px;
+    width: 100%;
+}
+
+.terminal-header .dot {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+/* ── PROFILE CARD ── */
+.profile-card {
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+    padding: 30px;
+    max-width: 400px;
+}
+
+.profile-img {
+    width: 50%;
+    border-radius: 8px;
+}
+
+/* ── SKILLS ── */
+.skills-grid {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+}
+
+.skills-grid li {
+    background-color: #1a1a1a;
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-size: 0.8rem;
+    border-left: 3px solid #321ee1;
+}
+
+/* ── ÁREA ITEM ── */
+.area-item {
+    margin-bottom: 15px;
+}
+
+.area-item strong {
+    color: #fff;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.area-item p {
+    color: #aaa;
+    font-size: 0.9rem;
+    line-height: 1.6;
+}
+
+/* ── SOCIAL LINKS ── */
+.social-links {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.social-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 45px;
+    background-color: #121212;
+    border: 1px solid #333;
+    border-radius: 8px;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.social-icon:hover {
+    border-color: #321ee1;
+    color: #321ee1;
+}
+
+.social-icon i {
+    font-size: 1.2rem;
+}
+
+/* ── TABELA ── */
+table {
+    width: 100%;
+    max-width: 400px;
+    border-collapse: collapse;
+    margin: 0 auto;
+    font-size: 0.8rem;
+}
+
+th, td {
+    padding: 8px 5px;
+    text-align: left;
+    white-space: nowrap;
+}
+
+/* ── ÁUDIO ── */
+audio {
+    width: 100%;
+    height: 35px;
+    margin: 15px 0;
+}
+
+/* ── CURRÍCULO ── */
+.curriculo-page .container {
+    max-width: 800px;
+    margin: 100px auto;
+    padding: 40px;
+    background-color: #111;
+    border-radius: 12px;
+    border: 1px solid #333;
+}
+
+.cv-section {
+    margin-top: 30px;
+    border-top: 1px solid #222;
+    padding-top: 20px;
+}
+
+.cv-item h4 {
+    color: #321ee1;
+    margin-bottom: 5px;
+}
+
+.cv-item span {
+    font-size: 0.8rem;
+    color: #888;
+}
+
+/* ── FORMULÁRIO ── */
+.container-form {
+    max-width: 800px;
+    margin: 120px auto;
+    padding: 40px;
+    background-color: #111;
+    border: 1px solid #333;
+    border-radius: 12px;
+}
+
+.form-header h1 {
+    font-family: 'JetBrains Mono', monospace;
+    color: #321ee1;
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.contact-table {
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0 15px;
+}
+
+.contact-table td {
+    padding: 10px;
+    color: #fff;
+    vertical-align: top;
+}
+
+.contact-table label {
+    font-family: 'JetBrains Mono', monospace;
+    color: #888;
+    font-weight: bold;
+    display: block;
+    margin-top: 10px;
+}
+
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    background-color: #0a0a0a;
+    border: 1px solid #444;
+    border-radius: 6px;
+    color: #fff;
+    font-family: inherit;
+}
+
+input:focus,
+textarea:focus {
+    outline: none;
+    border-color: #321ee1;
+}
+
+.btn-primary {
+    width: 100%;
+    padding: 15px;
+    margin-top: 20px;
+    background-color: #321ee1;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-primary:hover {
+    background-color: #2518b0;
+}
+
+/* ── SERVIÇOS ── */
+
+.servicos-page .container {
+    max-width: 1400px;
+    margin: 120px auto;
+    padding: 40px;
+    background: #0a0a0a;
+    border: 1px solid#333;
+    border-radius: 12px;
+}
+.table-container{
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    color: #fff;
+}
+.table-container th{
+    text-align: left;
+    padding: 17px;
+    border-bottom: 2px solid #321ee1;
+    color: #321ee1
+}
+.table-container td {
+    padding: 20px 20px;
+    border-bottom: 1px solid #1b1a19bb;
+}
+.service-name {
+    font-weight: bold;
+    width: 25%;
+}
+.price{
+    color: #321ee1;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.table-container tr:hover {
+    background: rgba(9, 3, 61, 0.05);
+    transition: 0.3s;
+}

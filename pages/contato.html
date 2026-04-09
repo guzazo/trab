@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/style.css">
+     <link href="../img/favicon.ico" rel="icon" type="image/x-icon">
+    <title>Contato </title>
+</head>
+
+<body>
+    <header>
+        <div class="logo">=GC=</div>
+        <nav>
+            <ul>
+                <li> <a href="index.html" target="_self">Voltar ao ínicio</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main class="container-form">
+        <section class="form-header">
+            <h1> Vamos trabalhar juntos?</h1>
+            <p>Preencha os detalhes na tabela abaixo:</p>
+        </section>
+        <form action="" method="post">
+            <table class="contato-table">
+                <thead>
+                    <tr>
+                        <th rowspan="2">
+                            <label for="nome">Nome:</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="text" id=nome name="nome" size="40" maxlength="40" value=""
+                                placeholder="Digite seu nome" required>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th rowspan="2">
+                            <label for="telefone">Telefone:</label>
+                        </th>
+                    </tr>
+                    <tr>
+                        <th colspan="2">
+                            <input type="tel" id="telefone" name="telefone" size="40" maxlength="20"
+                                placeholder="(99)-9999999" required>
+                        </th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">
+                            <label for="email">Email:</label>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <input type="email" id="email" name="email" size="40" maxlength="40"
+                                placeholder="Digite seu melhor email" required>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label>Tipo:</label>
+                        </td>
+                        <td colspan="3">
+                            <input type="radio" name="tipo" value="fisica" checked> PF
+                            <input type="radio" name="tipo" value="juridica"> PJ
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="horario">Horário:</label>
+                        </td>
+                        <td>
+                            <select id="horario" name="horario">
+                                <option value="manha">Manhã</option>
+                                <option value="tarde">Tarde</option>
+                                <option value="noite">Noite</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label for="servico">Serviço:</label>
+                        </td>
+                        <td>
+                            <select id="servico" name="servico">
+                                <option value="web">Web Design</option>
+                                <option value="db">Banco de Dados</option>
+                                <option value="ui">UX/UI</option>
+                            </select>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <label for="mensagem">Descrição:</label>
+                        </td>
+                        <td colspan="4">
+                            <textarea id="mensagem" name="mensagem" rows="4"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" style="text-align: center;">
+                            <button type="submit" class="btn-primary" style="width: 100%;">Enviar Solicitação</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+    </main>
+</body>
+
+</html>
